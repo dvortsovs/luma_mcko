@@ -4,10 +4,6 @@ const config = {
   urls:{
     statusRadioRoom: 'http://192.168.60.10/pstat.xml',
     roomAdres: 'http://192.168.60.10/rb',
-    zeroRoomRele: 'http://192.168.60.10/rb0',
-    firstRoomRele: 'http://192.168.60.10/rb1',
-    secondRoomRele: 'http://192.168.60.10/rb2',
-    thirdRoomRele: 'http://192.168.60.10/rb3',
   }
 }
 
@@ -50,7 +46,7 @@ function checkActiveRele(url) {
     .then((arr) => {
       for (let i = 0; i < arr.length; i++) {
         if (i === 0) {
-          console.log('pass');
+          console.log('');
         } else {
           if (arr[i].textContent === '0') {
             roomBtns[i-1].classList.remove('radio-room__btn_active');
@@ -63,7 +59,6 @@ function checkActiveRele(url) {
 }
 
 function toggleLight(url, target) {
-  console.log(target.classList.toString().split(' ')[2])
   let rele = ''
   switch (target.classList.toString().split(' ')[2]) {
     case 'room-btn-one':
