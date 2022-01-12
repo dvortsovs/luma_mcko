@@ -1,0 +1,7 @@
+.radio-room__btn {
+  width: 150px;
+  height: 150px;
+}
+.radio-room__btn:hover {
+  background-color: rgba(244, 255, 42, 0.7);
+}

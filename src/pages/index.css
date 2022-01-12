@@ -45,3 +45,11 @@
 /*side-balcony*/
 @import url('../blocks/side-balcony/side-balcony.css');
 @import url('../blocks/side-balcony/__one/side-balcony__one.css');
+
+/*radio-room*/
+@import url('../blocks/radio-room/radio-room.css');
+@import url('../blocks/radio-room/__btn/radio-room__btn.css');
+@import url('../blocks/radio-room/__btn/radio-room__btn_active.css');
+
+/*active-page*/
+@import url('../blocks/active-page/active-page.css');
