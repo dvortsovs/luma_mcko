@@ -1,7 +1,33 @@
 /*vendor*/
 @import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
 /*body*/
 @import url('../blocks/content/content.css');
+
 /*main*/
 @import url('../blocks/main/main.css');
 
+/*button*/
+@import url('../blocks/button/button.css');
+@import url('../blocks/button/_thin/button_thin.css');
+
+/*stage*/
+@import url('../blocks/stage/stage.css');
+@import url('../blocks/stage/__third/stage__third.css');
+
+/*zal*/
+@import url('../blocks/zal/zal.css');
+@import url('../blocks/zal/__third/zal__third.css');
+
+/*balcony*/
+@import url('../blocks/balcony/balcony.css');
+@import url('../blocks/balcony/__two/balcony__two.css');
+
+/*over-balcony*/
+@import url('../blocks/over-balcony/over-balcony.css');
+@import url('../blocks/over-balcony/__third/over-balcony__third.css');
+
+/*side-balcony*/
+@import url('../blocks/side-balcony/side-balcony.css');
+@import url('../blocks/side-balcony/__one/side-balcony__one.css');

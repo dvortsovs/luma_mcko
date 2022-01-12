@@ -1,0 +1,17 @@
+.side-balcony {
+  position: absolute;
+  top: 32%;
+  right: -50px;
+}
+.side-balcony::before {
+  writing-mode: vertical-rl;
+  z-index: -1;
+  content: 'balcony';
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  font-size: 12px;
+  letter-spacing: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}

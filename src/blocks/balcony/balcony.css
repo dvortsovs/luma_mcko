@@ -1,0 +1,18 @@
+.balcony {
+  position: relative;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-rows: auto auto;
+}
+.balcony::before {
+  z-index: -1;
+  content: 'balcony';
+  position: absolute;
+  top: -20%;
+  left: 25%;
+  font-size: 90px;
+  letter-spacing: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
