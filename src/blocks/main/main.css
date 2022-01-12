@@ -1,5 +1,7 @@
 .main {
   position: relative;
   margin: 0 auto;
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
+  height: calc(100vh - 60px);
 }

@@ -1,11 +1,15 @@
 .stage {
   position: relative;
-  height: 30vh;
+  height: 30%;
   display: flex;
   flex-direction: column;
 }
 
 .stage::before {
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  width: 100%;
   z-index: -1;
   content: 'stage';
   position: absolute;
@@ -13,5 +17,5 @@
   left: 18%;
   font-size: 250px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }

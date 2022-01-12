@@ -2,11 +2,25 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
 
+/*header*/
+@import url('../blocks/header/header.css');
+
+/*navigation*/
+@import url('../blocks/navigation/navigation.css');
+@import url('../blocks/navigation/__link-list/navigation__link-list.css');
+
+/*nav-btn*/
+@import url('../blocks/nav-btn/nav-btn.css');
+
 /*body*/
 @import url('../blocks/content/content.css');
 
 /*main*/
 @import url('../blocks/main/main.css');
+
+/*hall*/
+@import url('../blocks/hall/hall.css');
+@import url('../blocks/hall/__container/hall__container.css');
 
 /*button*/
 @import url('../blocks/button/button.css');
