@@ -3,7 +3,9 @@ import './index.css';
 const config = {
   urls:{
     statusRadioRoom: 'http://192.168.60.10/pstat.xml',
+    statusHall: 'http://192.168.60.11/pstat.xml',
     roomAdres: 'http://192.168.60.10/rb',
+    hallAdres: 'http://192.168.60.11/rb'
   }
 }
 
@@ -56,36 +58,79 @@ function checkActiveRele(url) {
         }
       }
     })
+    .catch((err) => console.log(err));
 }
 
 function toggleLight(url, target) {
-  let rele = ''
-  switch (target.classList.toString().split(' ')[2]) {
-    case 'room-btn-one':
-      rele = '0';
-      break;
-    case 'room-btn-two':
-      rele = '1';
-      break;
-    case 'room-btn-three':
-      rele = '2';
-      break;
-    case 'room-btn-four':
-      rele = '3';
-      break;
-  }
-  if (target.classList.contains('radio-room__btn_active')) {
-    fetch(`${url}${rele}f.cgi`)
-      .then((ans) => {
-        checkActiveRele(config.urls.statusRadioRoom);
-        return ans
-      })
+  if (target.classList.contains('radio-room__btn')){
+    let rele = ''
+    switch (target.classList.toString().split(' ')[2]) {
+      case 'room-btn-one':
+        rele = '0';
+        break;
+      case 'room-btn-two':
+        rele = '1';
+        break;
+      case 'room-btn-three':
+        rele = '2';
+        break;
+      case 'room-btn-four':
+        rele = '3';
+        break;
+    }
+    if (target.classList.contains('radio-room__btn_active')) {
+      fetch(`${url}${rele}f.cgi`)
+        .then((ans) => {
+          checkActiveRele(config.urls.statusRadioRoom);
+          return ans
+        })
+        .catch((err) => console.log(err));
+    } else {
+      fetch(`${url}${rele}n.cgi`)
+        .then((ans) => {
+          checkActiveRele(config.urls.statusRadioRoom);
+          return ans
+        })
+        .catch((err) => console.log(err));
+    }
   } else {
-    fetch(`${url}${rele}n.cgi`)
-      .then((ans) => {
-        checkActiveRele(config.urls.statusRadioRoom);
-        return ans
-      })
+    console.log(target.classList.toString().split(' ')[2])
+    let releHall = ''
+    switch (target.classList.toString().split(' ')[2]) {
+      case 'one':
+        releHall = '0';
+        break;
+      case 'two':
+        releHall = '1';
+        break;
+      case 'third':
+        releHall = '2';
+        break;
+      case 'four':
+        releHall = '3';
+        break;
+      case 'five':
+        releHall = '4';
+        break;
+      case 'six':
+        releHall = '5';
+        break;
+      case 'seven':
+        releHall = '6';
+        break;
+      case 'eight':
+        releHall = '7';
+        break;
+      case 'nine':
+        releHall = '8';
+        break;
+      case 'ten':
+        releHall = '9';
+        break;
+    }
+    fetch(`${url}${releHall}s.cgi`)
+      .then((res) => {return res})
+      .catch((err) => console.log(err));
   }
 }
 
@@ -120,5 +165,11 @@ groupsLightHall.forEach((group) => {
 roomBtns.forEach((btn) => btn.addEventListener('click',(evt) => {
   toggleLight(config.urls.roomAdres, evt.target);
 }))
+
+groupsLightHall.forEach((group) => {
+  Array.from(group).forEach((item) => item.addEventListener('click', (evt) => {
+    toggleLight(config.urls.hallAdres, evt.target);
+  }));
+});
 
 checkActiveRele(config.urls.statusRadioRoom);
