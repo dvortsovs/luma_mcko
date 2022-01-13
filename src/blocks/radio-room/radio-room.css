@@ -1,0 +1,7 @@
+.radio-room {
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

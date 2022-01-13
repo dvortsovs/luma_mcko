@@ -1,0 +1,11 @@
+.balcony {
+  position: relative;
+  height: 10%;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-rows: auto auto;
+  background-image: url('../../img/balcony.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

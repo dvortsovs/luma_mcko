@@ -1,45 +1,74 @@
 <!doctype html>
 <html lang="ru" class="page">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SVET-MCKO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Light Control MCKO</title>
 </head>
 <body class="content">
-    <header class="header"></header>
-    <main class="main">
-        <div class="stage">
-            <button type="button" class="stage__seven seven">7</button>
-            <button type="button" class="stage__third third">3</button>
-        </div>
-        <div class="zal">
-            <button type="button" class="zal__five five">5</button>
-            <button type="button" class="zal__nine nine">9</button>
-            <button type="button" class="zal__four four">4</button>
-            <button type="button" class="zal__third third">3</button>
-            <button type="button" class="zal__four four">4</button>
-            <button type="button" class="zal__ten ten">10</button>
-            <button type="button" class="zal__five five">5</button>
-        </div>
-        <div class="balcony">
-            <button type="button" class="balcony__two two">2</button>
-            <button class="balcony__six six">6</button>
-        </div>
-        <div class="over-balcony">
-            <button type="button" class="over-balcony__five five">5</button>
-            <button type="button" class="over-balcony__eight eight">8</button>
-            <button type="button" class="over-balcony__four four">4</button>
-            <button type="button" class="over-balcony__third third">3</button>
-            <button type="button" class="over-balcony__four four">4</button>
-            <button type="button" class="over-balcony__seven seven">7</button>
-            <button type="button" class="over-balcony__five five">5</button>
-        </div>
-        <div class="side-balcony">
-            <button type="button" class="side-balcony__one one">1</button>
-        </div>
-    </main>
-    <footer class="footer"></footer>
+<header class="header">
+  <div class="header-buttons"></div>
+  <nav class="navigation">
+    <ul class="navigation__link-list">
+      <li class="navigation__link-item">
+        <button type="button" class="navigation__link nav-btn nav-btn_hall">Hall</button>
+      </li>
+      <li class="navigation__link-item">
+        <button type="button" class="navigation__link nav-btn nav-btn_room">Radio Room</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-buttons">
+    <button class="header-buttons__btn button header-buttons__btn_all-on">ALL ON</button>
+    <button class="header-buttons__btn button header-buttons__btn_all-off">ALL OFF</button>
+  </div>
+</header>
+<main class="main">
+  <div class="hall active-page">
+    <div class="hall__container">
+      <div class="stage">
+        <button type="button" class="stage__seven button seven">7</button>
+        <button type="button" class="stage__third button third">3</button>
+      </div>
+      <div class="zal">
+        <button type="button" class="zal__five button five button_thin">5</button>
+        <button type="button" class="zal__nine button nine button_thin">9</button>
+        <button type="button" class="zal__four button four button_thin">4</button>
+        <button type="button" class="zal__third button third">3</button>
+        <button type="button" class="zal__four button four button_thin">4</button>
+        <button type="button" class="zal__ten button ten button_thin">10</button>
+        <button type="button" class="zal__five button five button_thin">5</button>
+      </div>
+      <div class="balcony">
+        <button type="button" class="balcony__two button two">2</button>
+        <button type="button" class="balcony__six button six">6</button>
+        <button type="button" class="balcony__six button six">6</button>
+        <button type="button" class="balcony__six button six">6</button>
+        <button type="button" class="balcony__six button six">6</button>
+      </div>
+      <div class="over-balcony">
+        <button type="button" class="over-balcony__five button five button_thin">5</button>
+        <button type="button" class="over-balcony__eight button eight button_thin">8</button>
+        <button type="button" class="over-balcony__four button four button_thin">4</button>
+        <button type="button" class="over-balcony__third button third">3</button>
+        <button type="button" class="over-balcony__four button four button_thin">4</button>
+        <button type="button" class="over-balcony__seven button seven button_thin">7</button>
+        <button type="button" class="over-balcony__five button five button_thin">5</button>
+      </div>
+    </div>
+    <div class="side-balcony">
+      <button type="button" class="side-balcony__one button one">1</button>
+    </div>
+  </div>
+  <div class="radio-room">
+    <button class="radio-room__btn button room-btn-one">1</button>
+    <button class="radio-room__btn button room-btn-two">2</button>
+    <button class="radio-room__btn button room-btn-three">3</button>
+    <button class="radio-room__btn button room-btn-four">4</button>
+  </div>
+</main>
+<footer class="footer"></footer>
 </body>
 </html>

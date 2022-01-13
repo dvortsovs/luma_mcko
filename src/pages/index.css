@@ -1,7 +1,60 @@
 /*vendor*/
 @import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
+/*header*/
+@import url('../blocks/header/header.css');
+
+/*header-buttons*/
+@import url('../blocks/header-buttons/header-buttons.css');
+@import url('../blocks/header-buttons/__btn/header-buttons__btn.css');
+
+/*navigation*/
+@import url('../blocks/navigation/navigation.css');
+@import url('../blocks/navigation/__link-list/navigation__link-list.css');
+@import url('../blocks/navigation/__link-item/navigation__link-item.css');
+
+/*nav-btn*/
+@import url('../blocks/nav-btn/nav-btn.css');
+
 /*body*/
 @import url('../blocks/content/content.css');
+
 /*main*/
 @import url('../blocks/main/main.css');
 
+/*hall*/
+@import url('../blocks/hall/hall.css');
+@import url('../blocks/hall/__container/hall__container.css');
+
+/*button*/
+@import url('../blocks/button/button.css');
+@import url('../blocks/button/_thin/button_thin.css');
+
+/*stage*/
+@import url('../blocks/stage/stage.css');
+@import url('../blocks/stage/__third/stage__third.css');
+
+/*zal*/
+@import url('../blocks/zal/zal.css');
+@import url('../blocks/zal/__third/zal__third.css');
+
+/*balcony*/
+@import url('../blocks/balcony/balcony.css');
+@import url('../blocks/balcony/__two/balcony__two.css');
+
+/*over-balcony*/
+@import url('../blocks/over-balcony/over-balcony.css');
+@import url('../blocks/over-balcony/__third/over-balcony__third.css');
+
+/*side-balcony*/
+@import url('../blocks/side-balcony/side-balcony.css');
+@import url('../blocks/side-balcony/__one/side-balcony__one.css');
+
+/*radio-room*/
+@import url('../blocks/radio-room/radio-room.css');
+@import url('../blocks/radio-room/__btn/radio-room__btn.css');
+@import url('../blocks/radio-room/__btn/radio-room__btn_active.css');
+
+/*active-page*/
+@import url('../blocks/active-page/active-page.css');

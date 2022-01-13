@@ -1,0 +1,18 @@
+.nav-btn {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #602c35;
+  padding: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.nav-btn:hover {
+  background-color: #ff8f1d;
+}
