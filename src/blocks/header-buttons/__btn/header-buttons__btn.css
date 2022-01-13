@@ -1,0 +1,9 @@
+.header-buttons__btn {
+  width: 50%;
+  font-weight: 600;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.header-buttons__btn:hover {
+  background-color: #f4ff2a;
+}

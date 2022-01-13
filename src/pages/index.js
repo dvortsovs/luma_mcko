@@ -48,7 +48,7 @@ function checkActiveRele(url) {
     .then((arr) => {
       for (let i = 0; i < arr.length; i++) {
         if (i === 0) {
-          console.log('');
+          ;
         } else {
           if (arr[i].textContent === '0') {
             roomBtns[i-1].classList.remove('radio-room__btn_active');
@@ -94,7 +94,6 @@ function toggleLight(url, target) {
         .catch((err) => console.log(err));
     }
   } else {
-    console.log(target.classList.toString().split(' ')[2])
     let releHall = ''
     switch (target.classList.toString().split(' ')[2]) {
       case 'one':
