@@ -14,6 +14,8 @@ const hall = container.querySelector('.hall');
 const room = container.querySelector('.radio-room');
 const hallLink = container.querySelector('.nav-btn_hall');
 const roomLink = container.querySelector('.nav-btn_room');
+const allOnBtn = container.querySelector('.header-buttons__btn_all-on');
+const allOffBtn = container.querySelector('.header-buttons__btn_all-off');
 
 const groupsLightHall = [
   container.querySelectorAll('.one'),
@@ -153,8 +155,32 @@ function changePage(evt) {
   }
 }
 
+function setAll(url, space, action){
+  for (let i = 0; i < space.length; i++) {
+    fetch(`${url}${String(i)}${action}.cgi`)
+      .then((res) => {
+        checkActiveRele(config.urls.statusRadioRoom);
+        return res
+      })
+  }
+}
+
 hallLink.addEventListener('click', changePage);
 roomLink.addEventListener('click', changePage);
+allOnBtn.addEventListener('click',() => {
+  if (hall.classList.contains('active-page')) {
+    setAll(config.urls.hallAdres, groupsLightHall, 's');
+  } else {
+    setAll(config.urls.roomAdres, roomBtns, 'n');
+  }
+})
+allOffBtn.addEventListener('click', () => {
+  if (hall.classList.contains('active-page')) {
+    setAll(config.urls.hallAdres, groupsLightHall, 's');
+  } else {
+    setAll(config.urls.roomAdres, roomBtns, 'f');
+  }
+})
 
 groupsLightHall.forEach((group) => {
   Array.from(group).forEach((item) => item.addEventListener('mouseout', deleteHover));
