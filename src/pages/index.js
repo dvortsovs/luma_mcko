@@ -130,7 +130,9 @@ function toggleLight(url, target) {
         break;
     }
     fetch(`${url}${releHall}s.cgi`)
-      .then((res) => {return res})
+      .then((res) => {
+        console.log('323')
+        return res})
       .catch((err) => console.log(err));
   }
 }
