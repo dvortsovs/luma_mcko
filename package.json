@@ -2,7 +2,7 @@
   "name": "luma_mcko",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve"
@@ -26,6 +26,7 @@
     "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
-    "core-js": "^3.20.2"
+    "core-js": "^3.20.2",
+    "express": "^4.17.2"
   }
 }
