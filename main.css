@@ -1,0 +1,29 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+.header{background-color:#575760;display:flex;height:60px;justify-content:space-between;margin:0;padding:0;width:100%}
+.header-buttons{display:flex;width:20%}
+.header-buttons__btn{box-sizing:border-box;font-weight:600;overflow:hidden;width:50%}.header-buttons__btn:hover{background-color:#f4ff2a}
+.navigation{height:100%;margin:0;padding:0;width:40%}
+.navigation__link-list{align-items:center;display:flex;height:100%;justify-content:center;list-style-type:none;margin:0;padding:0;width:100%}
+.navigation__link-item{margin:5px;width:50%}
+.nav-btn{background-color:#602c35;border:none;border-radius:3px;box-sizing:border-box;color:#fff;cursor:pointer;font-size:22px;font-weight:500;overflow:hidden;padding:10px;text-overflow:ellipsis;white-space:nowrap;width:100%}.nav-btn:hover{background-color:#ff8f1d}
+.content{background-color:#2d2d36;font-family:Arial,sans-serif;margin:0;padding:0;width:100%}
+.main{height:calc(100vh - 60px);margin:0 auto;max-width:720px;position:relative;width:100%}
+.hall{align-items:center;display:none;flex-wrap:nowrap;height:100%;justify-content:center;width:100%}
+.hall__container{height:100%;width:100%}
+.button{background-color:rgba(175,185,255,.7);border:none;border-radius:3px;box-sizing:border-box;font-size:26px;margin:2px;outline:1px solid #000;overflow:hidden;padding:0}
+.button_thin{width:100%}
+.stage{background-position:50%;background-repeat:no-repeat;background-size:contain;display:flex;flex-direction:column;height:30%;position:relative}
+.stage__third{height:100%}
+.zal{display:flex;height:30%;justify-content:space-between}
+.zal__third{width:400%}
+.balcony{background-position:50%;background-repeat:no-repeat;background-size:contain;display:grid;grid-template-columns:auto 80% auto;grid-template-rows:auto auto;height:10%;position:relative}
+.balcony__two{grid-column:2;grid-row:1/3}
+.over-balcony{display:flex;height:30%;justify-content:space-between}
+.over-balcony__third{width:400%}
+.side-balcony{height:50%;margin:0;position:relative}
+.side-balcony__one{background-position:50%;background-repeat:no-repeat;background-size:contain;height:100%;width:40px}
+.radio-room{align-items:center;display:none;height:calc(100vh - 60px);justify-content:center;width:100%}
+.radio-room__btn{height:150px;width:150px}.radio-room__btn:hover{background-color:rgba(244,255,42,.7)}
+.radio-room__btn_active{color:red;font-size:60px;font-weight:600}
+.active-page{display:flex}
+
